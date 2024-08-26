@@ -1,4 +1,4 @@
-name: Greetings
+name: First_greetings_Mrnobody
 
 on: [pull_request_target, issues]
 
