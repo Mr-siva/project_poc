@@ -1,0 +1,19 @@
+name: Context needs
+on: [push]
+
+jobs:
+  jobsB:
+    needs: jobsA
+    runs-on: ununtu-latest
+    stepA:
+      - name:
+        run: echo "World"
+  jobsA:
+    runs-on: ununtu-latest
+    stepb:
+      - name:
+        run: echo "Hello"
+      
+
+    
+  
