@@ -6,13 +6,13 @@ on: ['push']
 
 jobs:
   jobsB:
-    runs-on: ubuntu:22
+    runs-on: ubuntu-latest
     
     steps:
       - name: This is step B
         run: echo "World"
   jobsA:
-    runs-on: ubuntu:22
+    runs-on: ubuntu-latest
     steps:
       - name: This is step A
         run: echo "Hello"
