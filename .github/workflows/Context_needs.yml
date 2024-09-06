@@ -6,12 +6,10 @@ on: ['push']
 jobs:
   jobsB:
     runs-on: ununtu-latest
-    needs: jobsA
+    
     steps:
       - name: This is step B
         run: echo "World"
-      #- name: This is another 
-      #  run: ech
   jobsA:
     runs-on: ununtu-latest
     steps:
