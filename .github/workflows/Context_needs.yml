@@ -1,18 +1,21 @@
 # comments are added here
-name: Context needs
-on: [push]
+name: "Context needs"
+
+on: ['push']
 
 jobs:
   jobsB:
     runs-on: ununtu-latest
     needs: jobsA
-    stepA:
-      - name:
+    steps:
+      - name: This is step B
         run: echo "World"
+      #- name: This is another 
+      #  run: ech
   jobsA:
     runs-on: ununtu-latest
-    stepb:
-      - name:
+    steps:
+      - name: This is step A
         run: echo "Hello"
       
 
