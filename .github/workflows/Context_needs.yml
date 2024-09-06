@@ -4,8 +4,8 @@ on: [push]
 
 jobs:
   jobsB:
-    needs: jobsA
     runs-on: ununtu-latest
+    needs: jobsA
     stepA:
       - name:
         run: echo "World"
