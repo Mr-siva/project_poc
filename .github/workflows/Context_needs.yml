@@ -1,17 +1,18 @@
 # comments are added here
 name: "Context needs"
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on: ['push']
 
 jobs:
   jobsB:
-    runs-on: ununtu-latest
+    runs-on: ubuntu:22
     
     steps:
       - name: This is step B
         run: echo "World"
   jobsA:
-    runs-on: ununtu-latest
+    runs-on: ubuntu:22
     steps:
       - name: This is step A
         run: echo "Hello"
